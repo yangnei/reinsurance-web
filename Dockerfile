@@ -1,10 +1,11 @@
 FROM node:latest as build-stage
+LABEL stage=build
+
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-COPY .env .
-COPY .env.production .
+COPY .env* ./
 RUN npm run build
 
 FROM nginx as production-stage
