@@ -23,7 +23,7 @@ export default {
   'layouts.usermenu.dialog.title': 'Message',
   'layouts.usermenu.dialog.content': 'Are you sure you would like to logout?',
   'layouts.userLayout.title': 'Facultative Reinsurance Management System',
-  'layouts.userLayout.copyright': 'Copyright © 2021 Living-Space (Shanghai) Data Technology Service Co., Ltd.',
+  'layouts.userLayout.copyright': 'Copyright © 2021 Insight Data Technology Service (Liaoning) Co., Ltd.',
   ...components,
   ...global,
   ...menu,
