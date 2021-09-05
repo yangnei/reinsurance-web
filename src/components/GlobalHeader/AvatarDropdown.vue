@@ -2,7 +2,7 @@
   <a-dropdown v-if='currentUser && currentUser.name' placement='bottomRight'>
     <span class='ant-pro-account-avatar'>
       <a-avatar size='small'
-                :src="currentUser.avatar ? `/api/file/avatar/${currentUser.avatar}` :'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png'"
+                :src="currentUser.avatar ? `${avatar_api_base_url}/file/avatar/${currentUser.avatar}` :'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png'"
                 class='antd-pro-global-header-index-avatar' />
       <span>{{ currentUser.name }}</span>
     </span>
@@ -69,6 +69,11 @@ export default {
         }
       })
     }
+  },
+  computed: {
+    avatar_api_base_url() {
+      return process.env.VUE_APP_API_BASE_URL
+    },
   }
 }
 </script>

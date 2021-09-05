@@ -195,7 +195,7 @@ export default {
     currentUser() {
       return {
         avatar: this.$store.getters.userInfo && this.$store.getters.userInfo.avatar ?
-          `/api/file/avatar/${this.$store.getters.userInfo.avatar}` :
+          `${process.env.VUE_APP_API_BASE_URL}/file/avatar/${this.$store.getters.userInfo.avatar}` :
           'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png'
       }
     },

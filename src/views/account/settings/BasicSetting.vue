@@ -114,7 +114,7 @@ export default {
     this.form.companyId = companyId || ''
     this.form.department = department || ''
     this.form.position = position || ''
-    this.option.img = avatar ? `/api/file/avatar/${avatar}` : '/avatar2.jpg'
+    this.option.img = avatar ? `${process.env.VUE_APP_API_BASE_URL}/file/avatar/${avatar}` : '/avatar2.jpg'
   },
   methods: {
     setavatar(url) {
