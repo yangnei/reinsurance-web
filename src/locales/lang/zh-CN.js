@@ -22,7 +22,7 @@ export default {
   'layouts.usermenu.dialog.title': '信息',
   'layouts.usermenu.dialog.content': '您确定要注销吗？',
   'layouts.userLayout.title': '再保险临时分入业务管理系统',
-  'layouts.userLayout.copyright': '版权所有 © 2021 英氏软件科技（辽宁）有限公司',
+  'layouts.userLayout.copyright': '版权所有 © 2021 XX软件科技（XX）有限公司',
   ...components,
   ...global,
   ...menu,
