@@ -23,7 +23,7 @@ export default {
   'layouts.usermenu.dialog.title': 'Message',
   'layouts.usermenu.dialog.content': 'Are you sure you would like to logout?',
   'layouts.userLayout.title': 'Facultative Reinsurance Management System',
-  'layouts.userLayout.copyright': 'Copyright © ',
+  'layouts.userLayout.copyright': 'Copyright © 2021 XX Software Technology (XX) Co., Ltd.',
   ...components,
   ...global,
   ...menu,
